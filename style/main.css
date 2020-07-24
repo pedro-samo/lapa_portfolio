@@ -1,22 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap');
 body {
-    margin: 0;
     font-family: 'Inconsolata', monospace;
-    line-height: 1.5;
-    color: #222222;
 }
 
 img {
     max-width: 100%;
-}
-
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 1em;
-    padding-right: 1em;
-    max-width: 980px;
 }
 
 .header {
@@ -113,6 +102,10 @@ img {
     border: 1px solid #e7b101;
 }
 
+.hero__texto__button {
+    display: none;
+}
+
 .js .header__nav {
     transition: max-height 1s;
 }
@@ -153,7 +146,11 @@ footer {
     }
 }
 
-@media only screen and (min-width: 758px) {
+@media only screen and (min-width: 768px) {
+    .hero {
+        margin: 50px auto 52px;
+        width: 70%;
+    }
     .hero__texto__henrique {
         font-size: 45px;
     }
@@ -181,14 +178,73 @@ footer {
         justify-content: space-around;
     }
     .header__nav a {
-        font-size: 20px;
+        font-size: 25px;
+        letter-spacing: .1em;
     }
     .header__nav a:active {
         position: relative;
         top: 1px;
     }
     .hero {
-        margin: 70px auto 20px;
+        margin: 75px auto;
         width: 70%;
+        height: 75vh;
+        display: grid;
+        grid-gap: 70px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1;
+        justify-self: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .hero__texto {
+        grid-column: 1 /2;
+        align-self: center;
+        justify-content: center;
+    }
+    .hero__texto h1 {
+        text-align: center;
+        margin: 0;
+    }
+    .hero__texto__henrique {
+        font-size: 55px;
+    }
+    .hero__texto__lapa {
+        font-size: 60px;
+    }
+    .hero__texto p {
+        font-size: 20px;
+        line-height: 1.5em;
+    }
+    .hero__imagem {
+        align-self: center;
+        margin: 0 auto;
+        padding-top: 10px;
+        width: auto;
+        height: auto;
+    }
+    .hero__imagem img {
+        border-radius: 0%;
+        padding: 5px;
+        border: 1px solid #e7b101;
+    }
+    .hero__texto__button {
+        display: block;
+        margin: 0 auto;
+        border: none;
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10px 20px;
+        background-color: #03664d;
+    }
+    .hero__texto__button:hover {
+        background-color: #01926e;
+        cursor: pointer;
+    }
+    .hero__texto__button:active {
+        position: relative;
+        top: 1px;
     }
 }
