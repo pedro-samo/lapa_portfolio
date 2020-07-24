@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap');
+body {
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.5;
+    color: #222222;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 980px;
+}
+
+.header {
+    width: 100%;
+    clear: none;
+}
+
+.header__nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav li {
+    list-style-type: none;
+    background: #03664d;
+    text-align: center;
+    border-bottom: 1px dotted #01503c;
+}
+
+.header__nav a {
+    padding: 15px 0;
+    text-transform: uppercase;
+    color: #18a582;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    transition: .5s ease;
+}
+
+.header__nav a:hover {
+    color: #f5fffc;
+}
+
+.header__btnMenu {
+    background: transparent;
+    border: none;
+    left: 10px;
+    top: 5px;
+    font-size: 16px;
+    position: absolute;
+    color: rgb(160, 160, 160);
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 7px;
+    border: 1px solid #e7b101;
+    border-radius: 10%;
+}
+
+.hero {
+    margin: 50px auto;
+    width: 90%;
+}
+
+.hero__texto h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.hero__texto__henrique {
+    font-weight: 500;
+    font-family: 'Asap', sans-serif;
+    color: #1f1f1f;
+    text-transform: uppercase;
+    font-size: 37px;
+}
+
+.hero__texto__lapa {
+    text-transform: uppercase;
+    color: #03664d;
+    font-family: 'Asap', sans-serif;
+    font-size: 37px;
+    margin: 10px auto;
+    font-weight: 700;
+}
+
+.hero__texto p {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.hero__imagem {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 270px;
+    height: auto;
+}
+
+.hero__imagem img {
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #e7b101;
+}
+
+.js .header__nav {
+    transition: max-height 1s;
+}
+
+footer {
+    color: #18a582;
+    background-color: #03664d;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
