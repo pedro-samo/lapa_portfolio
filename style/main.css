@@ -30,7 +30,7 @@ img {
     text-transform: uppercase;
     font-family: 'Inconsolata', monospace;
     color: #18a582;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     text-decoration: none;
     display: block;
@@ -44,10 +44,11 @@ img {
 .header__btnMenu {
     background: transparent;
     border: none;
-    left: 10px;
+    left: 5px;
     top: 5px;
     font-size: 16px;
     position: absolute;
+    z-index: 10;
     color: rgb(160, 160, 160);
     background: transparent;
     border: none;
@@ -57,8 +58,42 @@ img {
     border-radius: 10%;
 }
 
+.trabalhos {
+    margin: 65px auto 0;
+    display: grid;
+    width: 100%;
+    text-align: center;
+    grid-template-rows: repeat(3, 1fr);
+    overflow: hidden;
+}
+
+.trabalhos__thumb {
+    width: 100%;
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr .15fr;
+    grid-gap: 0px;
+    gap: 0px;
+    margin-bottom: 5px;
+}
+
+.trabalhos img {
+    width: 100%;
+}
+
+.trabalhos p {
+    color: #18a582;
+    padding: 5px 0;
+    margin: 0;
+    background-color: #03664d;
+}
+
+.trabalho__thumb__vertical {
+    display: none;
+}
+
 .hero {
-    margin: 50px auto 20px;
+    margin: 10px auto 20px;
     width: 90%;
 }
 
@@ -107,6 +142,8 @@ img {
 }
 
 .js .header__nav {
+    position: absolute;
+    width: 100%;
     transition: max-height 1s;
 }
 
@@ -147,6 +184,36 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+    .trabalhos {
+        margin: 85px auto 0px;
+        width: 70%;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 0px;
+    }
+    .trabalhos__thumb {
+        grid-template-rows: auto;
+    }
+    .trabalhos__thumb:hover {
+        opacity: .7;
+        cursor: pointer;
+    }
+    .trabalho__thumb__horizontal {
+        display: none;
+    }
+    .trabalho__thumb__vertical {
+        display: block;
+    }
+    .trabalhos img {
+        width: 100%;
+    }
+    .trabalhos p {
+        color: #18a582;
+        padding: 5px 0;
+        margin: 0;
+        background-color: #03664d;
+    }
     .hero {
         margin: 50px auto 52px;
         width: 70%;
@@ -171,24 +238,25 @@ footer {
     }
     .header__nav {
         margin: 0 auto;
-        width: 60%;
+        width: 30%;
     }
     .header__nav ul {
         display: flex;
-        justify-content: space-around;
+        background-color: #03664d;
+        justify-content: center;
     }
     .header__nav a {
         font-size: 25px;
         letter-spacing: .1em;
+        padding: 15px 40px;
     }
     .header__nav a:active {
         position: relative;
         top: 1px;
     }
     .hero {
-        margin: 75px auto;
+        margin: 20px auto;
         width: 70%;
-        height: 75vh;
         display: grid;
         grid-gap: 70px;
         grid-template-columns: repeat(2, 1fr);
@@ -238,6 +306,7 @@ footer {
         text-align: center;
         padding: 10px 20px;
         background-color: #03664d;
+        transition: all .5s;
     }
     .hero__texto__button:hover {
         background-color: #01926e;
