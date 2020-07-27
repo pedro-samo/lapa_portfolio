@@ -11,6 +11,7 @@ img {
 .header {
     width: 100%;
     clear: none;
+    z-index: 100;
 }
 
 .header__nav ul {
@@ -185,7 +186,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
     .trabalhos {
-        margin: 85px auto 0px;
+        margin: 50px auto 0px;
         width: 70%;
         display: grid;
         grid-gap: 10px;
@@ -194,10 +195,6 @@ footer {
     }
     .trabalhos__thumb {
         grid-template-rows: auto;
-    }
-    .trabalhos__thumb:hover {
-        opacity: .7;
-        cursor: pointer;
     }
     .trabalho__thumb__horizontal {
         display: none;
@@ -246,13 +243,23 @@ footer {
         justify-content: center;
     }
     .header__nav a {
-        font-size: 25px;
+        font-size: 20px;
         letter-spacing: .1em;
         padding: 15px 40px;
     }
     .header__nav a:active {
         position: relative;
         top: 1px;
+    }
+    .trabalhos {
+        margin: 70px auto 0px;
+    }
+    .trabalhos__thumb {
+        transition: all;
+    }
+    .trabalhos__thumb:hover {
+        opacity: .7;
+        cursor: pointer;
     }
     .hero {
         margin: 20px auto;
