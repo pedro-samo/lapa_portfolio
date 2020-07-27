@@ -8,6 +8,11 @@ img {
     max-width: 100%;
 }
 
+a {
+    font-size: 0;
+    text-decoration: none;
+}
+
 .header {
     width: 100%;
     clear: none;
@@ -65,6 +70,7 @@ img {
     width: 100%;
     text-align: center;
     grid-template-rows: repeat(3, 1fr);
+    align-self: flex-end;
     overflow: hidden;
 }
 
@@ -72,6 +78,7 @@ img {
     width: 100%;
     display: grid;
     text-align: center;
+    align-self: flex-end;
     grid-template-rows: 1fr .15fr;
     grid-gap: 0px;
     gap: 0px;
