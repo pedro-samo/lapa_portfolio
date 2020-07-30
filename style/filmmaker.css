@@ -1,9 +1,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap');
+        html {
+            font-size: 62.5%;
+        }
+        
         body {
             font-family: 'Inconsolata', monospace;
             color: #1f1f1f;
             line-height: 1.4em;
+            font-size: 1.6rem;
         }
         
         img {
@@ -34,7 +39,7 @@
             text-transform: uppercase;
             font-family: 'Inconsolata', monospace;
             color: #18a582;
-            font-size: 16px;
+            font-size: 1.6rem;
             font-weight: 400;
             text-decoration: none;
             display: block;
@@ -50,13 +55,13 @@
             border: none;
             left: 5px;
             top: 5px;
-            font-size: 16px;
+            font-size: 1.6rem;
             position: absolute;
             z-index: 10;
             color: rgb(160, 160, 160);
             background: transparent;
             border: none;
-            font-size: 16px;
+            font-size: 1.6rem;
             padding: 7px;
             border: 1px solid #e7b101;
             border-radius: 10%;
@@ -98,7 +103,7 @@
         }
         
         .jobs__body p {
-            font-size: 14px;
+            font-size: 1.4rem;
         }
         
         footer {
@@ -124,7 +129,7 @@
             text-align: center;
             font-family: 'Inconsolata', monospace;
             color: #18a582;
-            font-size: 14px;
+            font-size: 1.4rem;
             font-weight: 400;
             text-decoration: none;
             display: block;
@@ -133,6 +138,79 @@
         
         .footer__nav a:hover {
             color: #f5fffc;
+        }
+        
+        .contato {
+            margin: 50px auto;
+            text-align: center;
+        }
+        
+        .contato__div__form {
+            display: inline;
+            line-height: 1.3em;
+        }
+        
+        .contato h2 {
+            background-color: #089b76;
+            font-weight: 300;
+            color: white;
+            display: inline-block;
+            padding: 5px 25px;
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        .contato__div__infos {
+            line-height: 1em;
+        }
+        
+        input,
+        label,
+        textarea,
+        select {
+            width: 60%;
+        }
+        
+        input,
+        textarea,
+        select {
+            background: #efefef;
+            padding: 15px;
+            border-radius: 5px;
+            border: 2px solid transparent;
+            margin-bottom: 15px;
+        }
+        
+        .form-button {
+            width: 80px;
+            margin-top: 1px;
+            height: 6%;
+            text-align: center;
+        }
+        
+        .form-button:hover {
+            background-color: rgb(212, 212, 212);
+            transition: all 1s;
+        }
+        
+         ::placeholder {
+            font-family: 'Inconsolata', monospace;
+        }
+        
+        .contato .fab {
+            font-size: 2em;
+            padding: 10px;
+            color: #089b76;
+            transition: all 3.s;
+        }
+        
+        .contato .fab:hover {
+            color: #07775b;
+        }
+        
+        .contato .fab:active {
+            position: relative;
+            top: 1px;
         }
         
         @media only screen and (min-width: 425px) {
@@ -148,11 +226,30 @@
                 width: 75%;
             }
             .jobs__body p {
-                font-size: 18px;
+                font-size: 1.8rem;
             }
             .footer__nav a {
                 padding: 15px 10px;
-                font-size: 20px;
+                font-size: 2.0rem;
+            }
+            input,
+            label,
+            textarea,
+            select {
+                width: 50%;
+            }
+            .contato__div {
+                display: flex;
+                margin: 44px auto;
+                flex-direction: row;
+                text-align: center;
+            }
+            .contato h2 {
+                font-size: 1.5em;
+            }
+            .contato__div__infos {
+                margin-left: -120px;
+                text-align: left;
             }
         }
         
@@ -176,7 +273,7 @@
                 justify-content: center;
             }
             .header__nav a {
-                font-size: 20px;
+                font-size: 2rem;
                 letter-spacing: .1em;
                 padding: 15px 40px;
             }
@@ -205,8 +302,12 @@
                 grid-template-rows: 1/2;
             }
             .jobs__body_p {
-                font-size: 12px;
+                font-size: 1.2rem;
                 grid-template-columns: 2/3;
                 grid-template-rows: 2/3;
+            }
+            .contato__div__infos {
+                margin-left: -170px;
+                text-align: left;
             }
         }
