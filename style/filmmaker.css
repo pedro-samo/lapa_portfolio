@@ -93,6 +93,11 @@ img {
     transition: .5s ease;
 }
 
+.fas {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
 .header__btnMenu {
     background: transparent;
     border: none;
