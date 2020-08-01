@@ -1,313 +1,486 @@
-        @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap');
-        html {
-            font-size: 62.5%;
-        }
-        
-        body {
-            font-family: 'Inconsolata', monospace;
-            color: #1f1f1f;
-            line-height: 1.4em;
-            font-size: 1.6rem;
-        }
-        
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        
-        .header {
-            width: 100%;
-            clear: none;
-            z-index: 100;
-        }
-        
-        .header__nav ul {
-            margin: 0;
-            padding: 0;
-        }
-        
-        .header__nav li {
-            list-style-type: none;
-            background: #03664d;
-            text-align: center;
-            border-bottom: 1px dotted #01503c;
-        }
-        
-        .header__nav a {
-            padding: 15px 0;
-            text-transform: uppercase;
-            font-family: 'Inconsolata', monospace;
-            color: #18a582;
-            font-size: 1.6rem;
-            font-weight: 400;
-            text-decoration: none;
-            display: block;
-            transition: .5s ease;
-        }
-        
-        .header__nav a:hover {
-            color: #f5fffc;
-        }
-        
-        .header__btnMenu {
-            background: transparent;
-            border: none;
-            left: 5px;
-            top: 5px;
-            font-size: 1.6rem;
-            position: absolute;
-            z-index: 10;
-            color: rgb(160, 160, 160);
-            background: transparent;
-            border: none;
-            font-size: 1.6rem;
-            padding: 7px;
-            border: 1px solid #e7b101;
-            border-radius: 10%;
-        }
-        
-        .js .header__nav {
-            position: absolute;
-            z-index: 100;
-            width: 100%;
-            transition: max-height 1s;
-        }
-        
-        .main {
-            margin: 60px auto;
-            width: 95%;
-        }
-        
-        .jobs__body {
-            margin-bottom: 10px;
-            border-bottom: 1px dotted #03664d;
-        }
-        
-        .responsive-iframe {
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .jobs__body h3 {
-            background-color: #089b76;
-            font-weight: 300;
-            color: white;
-            padding: 2px 0px;
-            font-size: 20px;
-            text-align: center;
-        }
-        
-        .jobs__body p {
-            font-size: 1.4rem;
-        }
-        
-        footer {
-            width: 100%;
-            background: #03664d;
-        }
-        
-        .footer__nav ul {
-            margin: 0 auto;
-            padding: 0;
-            text-align: center;
-        }
-        
-        .footer__nav li {
-            list-style-type: none;
-            display: inline-block;
-            text-align: center;
-        }
-        
-        .footer__nav a {
-            padding: 15px 5px;
-            text-transform: uppercase;
-            text-align: center;
-            font-family: 'Inconsolata', monospace;
-            color: #18a582;
-            font-size: 1.4rem;
-            font-weight: 400;
-            text-decoration: none;
-            display: block;
-            transition: .5s ease;
-        }
-        
-        .footer__nav a:hover {
-            color: #f5fffc;
-        }
-        
-        .contato {
-            margin: 50px auto;
-            text-align: center;
-        }
-        
-        .contato__div__form {
-            display: inline;
-            line-height: 1.3em;
-        }
-        
-        .contato h2 {
-            background-color: #089b76;
-            font-weight: 300;
-            color: white;
-            display: inline-block;
-            padding: 5px 25px;
-            font-size: 24px;
-            text-align: center;
-        }
-        
-        .contato__div__infos {
-            line-height: 1em;
-        }
-        
-        input,
-        label,
-        textarea,
-        select {
-            width: 60%;
-        }
-        
-        input,
-        textarea,
-        select {
-            background: #efefef;
-            padding: 15px;
-            border-radius: 5px;
-            border: 2px solid transparent;
-            margin-bottom: 15px;
-        }
-        
-        .form-button {
-            width: 80px;
-            margin-top: 1px;
-            height: 6%;
-            text-align: center;
-        }
-        
-        .form-button:hover {
-            background-color: rgb(212, 212, 212);
-            transition: all 1s;
-        }
-        
-         ::placeholder {
-            font-family: 'Inconsolata', monospace;
-        }
-        
-        .contato .fab {
-            font-size: 2em;
-            padding: 10px;
-            color: #089b76;
-            transition: all 3.s;
-        }
-        
-        .contato .fab:hover {
-            color: #07775b;
-        }
-        
-        .contato .fab:active {
-            position: relative;
-            top: 1px;
-        }
-        
-        @media only screen and (min-width: 425px) {
-            .main {
-                margin: 60px auto;
-                width: 85%;
-            }
-        }
-        
-        @media only screen and (min-width: 768px) {
-            .main {
-                margin: 60px auto;
-                width: 75%;
-            }
-            .jobs__body p {
-                font-size: 1.8rem;
-            }
-            .footer__nav a {
-                padding: 15px 10px;
-                font-size: 2.0rem;
-            }
-            input,
-            label,
-            textarea,
-            select {
-                width: 50%;
-            }
-            .contato__div {
-                display: flex;
-                margin: 44px auto;
-                flex-direction: row;
-                text-align: center;
-            }
-            .contato h2 {
-                font-size: 1.5em;
-            }
-            .contato__div__infos {
-                margin-left: -120px;
-                text-align: left;
-            }
-        }
-        
-        @media only screen and (min-width: 1024px) {
-            .header__btnMenu {
-                display: none;
-            }
-            .header {
-                position: fixed;
-                top: 0;
-                width: 100%;
-                background-color: #03664d;
-            }
-            .header__nav {
-                margin: 0 auto;
-                width: 30%;
-            }
-            .header__nav ul {
-                display: flex;
-                background-color: #03664d;
-                justify-content: center;
-            }
-            .header__nav a {
-                font-size: 2rem;
-                letter-spacing: .1em;
-                padding: 15px 40px;
-            }
-            .header__nav a:active {
-                position: relative;
-                top: 1px;
-            }
-            .main {
-                margin: 70px auto;
-                width: 70%;
-            }
-            .jobs__body {
-                margin: 50px auto;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: .1fr .9fr;
-                align-items: flex-start;
-                border-bottom: 0;
-            }
-            .jobs__body iframe {
-                grid-template-columns: 1/2;
-                grid-template-rows: 1/3;
-            }
-            .jobs__body_h3 {
-                grid-template-columns: 2/3;
-                grid-template-rows: 1/2;
-            }
-            .jobs__body_p {
-                font-size: 1.2rem;
-                grid-template-columns: 2/3;
-                grid-template-rows: 2/3;
-            }
-            .contato__div__infos {
-                margin-left: -170px;
-                text-align: left;
-            }
-        }
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap');
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    color: #1f1f1f;
+    line-height: 1.4em;
+    font-size: 1.6rem;
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+img {
+    width: 100%;
+}
+
+.header_scroll {
+    margin: 0 auto;
+    width: 90%;
+    clear: none;
+    z-index: 100;
+}
+
+.nav_scroll {
+    width: 100%;
+    background-color: transparent;
+    top: 50px;
+    display: flex;
+}
+
+.nav_scroll ul {
+    margin: 10px 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.nav_scroll li {
+    padding: 2px 15px;
+    margin: 5px 0;
+    display: inline-block;
+    border-bottom: 1px dotted rgb(75, 75, 75);
+}
+
+.nav_scroll a {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.header__btnMenu {
+    background: transparent;
+    border: none;
+    left: 5px;
+    top: 5px;
+    font-size: 1.6rem;
+    position: absolute;
+    z-index: 10;
+    color: rgb(160, 160, 160);
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    padding: 7px;
+    border: 1px solid #e7b101;
+    border-radius: 10%;
+}
+
+.header {
+    width: 100%;
+    clear: none;
+    z-index: 100;
+}
+
+.header__nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav li {
+    list-style-type: none;
+    background: #03664d;
+    text-align: center;
+    border-bottom: 1px dotted #01503c;
+}
+
+.header__nav a {
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-family: 'Inconsolata', monospace;
+    color: #18a582;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    transition: .5s ease;
+}
+
+.header__nav a:hover {
+    color: #f5fffc;
+}
+
+.header__btnMenu {
+    background: transparent;
+    border: none;
+    left: 5px;
+    top: 5px;
+    font-size: 16px;
+    position: absolute;
+    z-index: 10;
+    color: rgb(160, 160, 160);
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 7px;
+    border: 1px solid #e7b101;
+    border-radius: 10%;
+}
+
+.js .header__nav {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    transition: max-height 1s;
+}
+
+.main {
+    margin: 60px auto;
+    width: 95%;
+}
+
+.main_production {
+    margin: 10px auto;
+    width: 95%;
+}
+
+.jobs__body {
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #03664d;
+}
+
+.jobs__body_2 {
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #03664d;
+}
+
+.responsive-iframe {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main__jobs h2 {
+    font-family: 'Asap', sans-serif;
+    color: white;
+    padding: 5px 0px;
+    text-align: center;
+    background-color: #06644d;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.jobs__body h3 {
+    background-color: #089b76;
+    font-weight: 300;
+    color: white;
+    padding: 2px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.jobs__body_2 h3 {
+    background-color: #089b76;
+    font-weight: 300;
+    color: white;
+    padding: 2px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.jobs__body p {
+    font-size: 1.4rem;
+}
+
+.jobs__body_2 p {
+    font-size: 1.4rem;
+}
+
+.jobs__body_2 p {
+    font-size: 1.4rem;
+}
+
+footer {
+    width: 100%;
+    background: #03664d;
+}
+
+.footer__nav ul {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.footer__nav li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer__nav a {
+    padding: 15px 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    color: #18a582;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    transition: .5s ease;
+}
+
+.footer__nav a:hover {
+    color: #f5fffc;
+}
+
+.contato {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.contato__div__form {
+    display: inline;
+    line-height: 1.3em;
+}
+
+.contato h2 {
+    background-color: #089b76;
+    font-weight: 300;
+    color: white;
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.contato__div__infos {
+    line-height: 1em;
+}
+
+input,
+label,
+textarea,
+select {
+    width: 60%;
+}
+
+input,
+textarea,
+select {
+    background: #efefef;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    margin-bottom: 15px;
+}
+
+.form-button {
+    width: 80px;
+    margin-top: 1px;
+    height: 6%;
+    text-align: center;
+}
+
+.form-button:hover {
+    background-color: rgb(212, 212, 212);
+    transition: all 1s;
+}
+
+ ::placeholder {
+    font-family: 'Inconsolata', monospace;
+}
+
+.contato .fab {
+    font-size: 2em;
+    padding: 10px;
+    color: #089b76;
+    transition: all 3.s;
+}
+
+.contato .fab:hover {
+    color: #07775b;
+}
+
+.contato .fab:active {
+    position: relative;
+    top: 1px;
+}
+
+@media only screen and (min-width: 425px) {
+    .main {
+        margin: 10px auto;
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        margin: 10px auto;
+        width: 75%;
+    }
+    .jobs__body p {
+        font-size: 1.8rem;
+    }
+    .jobs__body_2 p {
+        font-size: 1.8rem;
+    }
+    .footer__nav a {
+        padding: 15px 10px;
+        font-size: 2.0rem;
+    }
+    input,
+    label,
+    textarea,
+    select {
+        width: 50%;
+    }
+    .contato__div {
+        display: flex;
+        margin: 44px auto;
+        flex-direction: row;
+        text-align: center;
+    }
+    .contato h2 {
+        font-size: 1.5em;
+    }
+    .contato__div__infos {
+        margin-left: -120px;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .main {
+        margin: 70px auto;
+        width: 70%;
+    }
+    .main_production {
+        margin: 30px auto;
+        width: 70%;
+    }
+    .header__btnMenu {
+        display: none;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #03664d;
+    }
+    .header__nav {
+        margin: 0 auto;
+        width: 30%;
+    }
+    .header__nav ul {
+        display: flex;
+        background-color: #03664d;
+        justify-content: center;
+    }
+    .header__nav a {
+        font-size: 24px;
+        letter-spacing: .1em;
+        padding: 15px 40px;
+    }
+    .header__nav a:active {
+        position: relative;
+        top: 1px;
+    }
+    .header_scroll {
+        width: 70%;
+    }
+    .nav_scroll a {
+        font-size: 22px;
+        transition: .5s ease;
+    }
+    .nav_scroll a :hover {
+        color: darkslategray;
+    }
+    .nav_scroll a:active {
+        position: relative;
+        top: 1px;
+    }
+    .jobs__body {
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: .1fr .9fr;
+        align-items: flex-start;
+        border-bottom: 0;
+    }
+    .embed-responsive .embed-responsive-16by9 {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+    .jobs__body_h3 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .jobs__body_p {
+        font-size: 1.2rem;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .jobs__body_2 {
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.1fr 0.9fr;
+        border-bottom: 0;
+    }
+    .jobs__body_2_img {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+    .jobs__body_2_h3 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .jobs__body_2_p {
+        font-size: 1.2rem;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .contato__div__infos {
+        margin-left: -170px;
+        text-align: left;
+    }
+}
