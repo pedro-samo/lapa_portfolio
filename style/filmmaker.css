@@ -345,6 +345,16 @@ select {
     top: 1px;
 }
 
+.footer_name {
+    color: #18a582;
+    background-color: #03664d;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
 @media only screen and (min-width: 425px) {
     .main {
         margin: 10px auto;
