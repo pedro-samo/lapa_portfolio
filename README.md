@@ -21,3 +21,7 @@ ________________________________________________________________________________
 
 ![Jobs, brief, contact screen](https://github.com/pedro-samo/lapa_portfolio/blob/master/imagens/readme/devices.png)
 
+
+__________________________________________________________________________________________________________________________________________________________________________________
+
+### DISCOVERY YOURSELF at: https://tinyurl.com/lapa-portfolio
