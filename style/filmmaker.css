@@ -103,13 +103,12 @@ img {
     border: none;
     left: 5px;
     top: 5px;
-    font-size: 1.6rem;
     position: absolute;
     z-index: 10;
     color: rgb(160, 160, 160);
     background: transparent;
     border: none;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     padding: 7px;
     border: 1px solid #e7b101;
     border-radius: 10%;
@@ -147,23 +146,6 @@ img {
 
 .header__nav a:hover {
     color: #f5fffc;
-}
-
-.header__btnMenu {
-    background: transparent;
-    border: none;
-    left: 5px;
-    top: 5px;
-    font-size: 16px;
-    position: absolute;
-    z-index: 10;
-    color: rgb(160, 160, 160);
-    background: transparent;
-    border: none;
-    font-size: 16px;
-    padding: 7px;
-    border: 1px solid #e7b101;
-    border-radius: 10%;
 }
 
 .js .header__nav {
