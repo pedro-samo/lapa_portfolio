@@ -12,4 +12,4 @@ _IDE: Visual Studio Code_ :blue_heart:
 
 ## HOME PAGE | index.html:
 
-![Home ScreenScroll](https://github.com/pedro-samo/lapa_portfolio/blob/master/imagens/Lapa_screen.gif)
+![Home ScreenScroll]
