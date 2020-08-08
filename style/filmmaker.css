@@ -283,6 +283,8 @@ footer {
 }
 
 .contato__div__form {
+    margin: 0;
+    padding: 0;
     display: inline;
     line-height: 1.3em;
 }
@@ -390,16 +392,17 @@ select {
     }
     .contato__div {
         display: flex;
-        margin: 44px auto;
+        margin: 40px auto;
+        align-items: flex-start;
+        justify-content: space-around;
         flex-direction: row;
-        text-align: center;
     }
     .contato h2 {
         font-size: 1.5em;
     }
     .contato__div__infos {
-        margin-left: -120px;
         text-align: left;
+        margin-left: -150px;
     }
 }
 
@@ -495,7 +498,7 @@ select {
         grid-row: 2/3;
     }
     .contato__div__infos {
-        margin-left: -170px;
+        margin-left: -230px;
         text-align: left;
     }
 }
