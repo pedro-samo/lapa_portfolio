@@ -14,6 +14,8 @@ _IDE: Visual Studio Code_ :blue_heart:
 
 ![Home ScreenScroll](https://github.com/pedro-samo/lapa_portfolio/blob/master/imagens/readme/Lapa_screen.gif)
 
+__________________________________________________________________________________________________________________________________________________________________________________
+
 
 ## JOBS, BRIEF, CONTACT:
 
