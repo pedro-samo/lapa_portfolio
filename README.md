@@ -2,6 +2,8 @@
 
 **This is a simple, honest and efficient work WebSite for my first and great friend, audiovisual producer and cultural, a lover of life: Antônio Henrique Lapa**
 
+## Technologies
+
 To build this project, the following technologies were used:
 
 * HTML 5
@@ -24,4 +26,4 @@ ________________________________________________________________________________
 
 __________________________________________________________________________________________________________________________________________________________________________________
 
-### DISCOVERY YOURSELF at: https://tinyurl.com/lapa-portfolio
+### Discovery yourself at: https://tinyurl.com/lapa-portfolio
