@@ -1,6 +1,6 @@
 # Henrique Lapa - Porfólio
 
-** My second web project. This is a simple, honest and efficient Work WebSite for my first and great friend, audiovisual producer and cultural, a lover of life: Antônio Henrique Lapa**
+**My second web project. This is a simple, honest and efficient Work WebSite for my first and great friend, audiovisual producer and cultural, a lover of life: Antônio Henrique Lapa**
 
 ## Technologies
 
@@ -35,8 +35,8 @@ ________________________________________________________________________________
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8707f9b4-a917-4a94-9dea-3500e65c2294/deploy-status)](https://app.netlify.com/sites/optimistic-banach-792bd5/deploys)
 __________________________________________________________________________________________________________________________________________________________________________________
 
-#### License
+### License
 
-Made by Pedro Santos Morais. This project is under the MIT license.
+Made by Pedro Santos Morais :alien: . This project is under the MIT license.
 
 
