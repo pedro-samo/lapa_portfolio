@@ -1,7 +1,7 @@
 
 
 # Henrique Lapa - Porfólio
-![GitHub repo size](https://img.shields.io/github/repo-size/pedro-samo/lapa_portfolio) ![GitHub language count](https://img.shields.io/github/languages/count/pedro-samo/lapa_portfolio) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/pedro-samo/lapa_portfolio) ![GitHub last commit](https://img.shields.io/github/last-commit/pedro-samo/lapa_portfolio)
+![GitHub repo size](https://img.shields.io/github/repo-size/pedro-samo/lapa_portfolio) ![GitHub language count](https://img.shields.io/github/languages/count/pedro-samo/lapa_portfolio) ![GitHub last commit](https://img.shields.io/github/last-commit/pedro-samo/lapa_portfolio)
 
 **My second web project. This is a simple, honest and efficient Work WebSite for my first and great friend, audiovisual producer and cultural, a lover of life: Antônio Henrique Lapa**
 
