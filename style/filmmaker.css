@@ -359,7 +359,7 @@ select {
         display: flex;
         margin: 40px auto;
         align-items: flex-start;
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: row;
     }
     .contato h2 {
@@ -466,7 +466,6 @@ select {
         grid-row: 2/3;
     }
     .contato__div__infos {
-        margin-left: -230px;
         text-align: left;
     }
 }
