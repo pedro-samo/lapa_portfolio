@@ -55,44 +55,6 @@ img {
     width: 100%;
 }
 
-.header_scroll {
-    margin: 0 auto;
-    width: 90%;
-    clear: none;
-    z-index: 100;
-}
-
-.nav_scroll {
-    width: 100%;
-    background-color: transparent;
-    top: 50px;
-    display: flex;
-}
-
-.nav_scroll ul {
-    margin: 10px 0 auto;
-    padding: 0;
-    text-align: center;
-}
-
-.nav_scroll li {
-    padding: 2px 15px;
-    margin: 5px 0;
-    display: inline-block;
-    border-bottom: 1px dotted rgb(75, 75, 75);
-}
-
-.nav_scroll a {
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Inconsolata', monospace;
-    color: gray;
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: none;
-    transition: .5s ease;
-}
-
 .fas {
     font-size: 20px;
     margin: 0 10px;
@@ -155,10 +117,31 @@ img {
     transition: max-height 1s;
 }
 
+.header_scroll{
+    margin: 10px auto;
+    width: 100%;
+}
+.nav_scroll ul{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.nav_scroll li{
+    margin: 3px 8px;
+    color: gray;
+    border-bottom: 1px solid #747474;
+}
+.nav_scroll a{
+    transition: all .3s;
+}
 .main {
     margin: 60px auto;
     width: 95%;
-}
+}   
 
 .main_production {
     margin: 10px auto;
@@ -427,8 +410,11 @@ select {
     .header_scroll {
         width: 70%;
     }
+    .header_scroll li{
+        margin: 10px 10px;
+    }
     .nav_scroll a {
-        font-size: 22px;
+        font-size: 25px;
         transition: .5s ease;
     }
     .nav_scroll a :hover {

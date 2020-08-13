@@ -20,26 +20,38 @@
 
 <body class="no-js">
 
-    <header>
-        <nav class="nav">
+    <header class="header">
+        <button style="display: none;" class="header__btnMenu"><i class="fas fa-bars fa-2x"></i><span class="sr-only">Menu</span></button>
+        <nav class="header__nav">
             <ul>
-                <a href="#works">
-                    <li>Work's</li>
-                </a>
-                <a href="#education">
-                    <li>Education</li>
-                </a>
-                <a href="#languages">
-                    <li>Languages</li>
-                </a>
+                <li><a href="https://optimistic-banach-792bd5.netlify.app/"><i class="fas fa-home"></i>
+                    Home</a></li>
+                <li><a href="https://optimistic-banach-792bd5.netlify.app/brief.html"><i class="fas fa-user"></i>
+                    About Me</a></li>
+                <li><a href="https://optimistic-banach-792bd5.netlify.app/contact.html"><i class="far fa-envelope"></i>
+                    Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <nav class="header_scroll">
+        <ul>
+            <a href="#works">
+                <li>Works</li>
+            </a>
+            <a href="#education">
+                <li>Education</li>
+            </a>
+            <a href="#languages">
+                <li>Languages</li>
+            </a>
+        </ul>
+    </nav>
+
     <main class="hero">
         <section class="brief">
             <section class="brief__work">
-                <h2 id="works"><i class="fas fa-video"></i> Work Expirience</h2>
+                <h2 id="works"><i class="fas fa-video"></i>Work Experience</h2>
                 <div class="brief__work_list">
                     <h3>Fiction Movies</h3>
                     <p>Apr-Jun/2019 <br>
@@ -160,21 +172,15 @@
         </section>
         <section class="hero__imagem">
             <img src="/imagens/perfil_mobile.jpeg">
+            <p>Working with audio-visual since 2014, I’ve been experience different possibilities among movies, TV Series, cultural festivais, live music concerts, workshops and advertising.</p>
         </section>
     </main>
 
-    <footer>
-        <nav class="footer__nav">
-            <ul>
-                <li><a href="https://optimistic-banach-792bd5.netlify.app/"><i class="fas fa-home"></i>
-                    Home</a></li>
-                <li><a href="https://optimistic-banach-792bd5.netlify.app/brief.html"><i class="fas fa-user"></i>
-                        About Me</a></li>
-                <li><a href="https://optimistic-banach-792bd5.netlify.app/contact.html"><i class="far fa-envelope"></i>
-                        Contact</a></li>
-            </ul>
-        </nav>
+    <footer class="footer_name">
+        <footer>Henrique Lapa - 2020</footer>
     </footer>
-
+    
     <script src="js/scroll.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
 </body>

@@ -1,6 +1,7 @@
     //SCROLL
 
-    const menuItens = document.querySelectorAll('.nav a[href^="#"')
+    const menuItens = document.querySelectorAll('.nav .header_scroll a[href^="#"')
+    
 
     menuItens.forEach(item => {
         item.addEventListener('click', scrollToIdOnClick);

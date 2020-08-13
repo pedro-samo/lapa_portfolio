@@ -48,25 +48,86 @@ img {
     max-width: 100%;
 }
 
-.nav {
-    width: 100%;
-    background-color: transparent;
-    top: 50px;
+.fas {
+    font-size: 20px;
+    margin: 0 10px;
 }
 
-.nav ul {
+.header__btnMenu {
+    background: transparent;
+    border: none;
+    left: 5px;
+    top: 5px;
+    position: absolute;
+    z-index: 10;
+    color: rgb(160, 160, 160);
+    background: transparent;
+    border: none;
+    padding: 7px;
+    border: 1px solid #e7b101;
+    border-radius: 10%;
+}
+
+.header {
+    width: 100%;
+    clear: none;
+    z-index: 100;
+}
+
+.header__nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav li {
+    list-style-type: none;
+    background: #03664d;
+    text-align: center;
+    border-bottom: 1px dotted #01503c;
+}
+
+.header__nav a {
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-family: 'Inconsolata', monospace;
+    color: #18a582;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    transition: .5s ease;
+}
+
+.header__nav a:hover {
+    color: #f5fffc;
+}
+
+.js .header__nav {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    transition: max-height 1s;
+}
+
+.header_scroll {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+.header_scroll ul {
     margin: 30px 0 auto;
     padding: 0;
     text-align: center;
 }
 
-.nav li {
+.header_scroll li {
     padding: 5px 5px;
     display: inline-block;
     border-bottom: 1px dotted rgb(75, 75, 75);
 }
 
-.nav a {
+.header_scroll a {
     text-transform: uppercase;
     text-align: center;
     font-family: 'Inconsolata', monospace;
@@ -81,14 +142,13 @@ img {
     display: none;
 }
 
+.hero__imagem{
+    text-align: center;
+}
+
 .brief {
     margin: 10px auto;
     width: 90%;
-}
-
-.fas {
-    font-size: 20px;
-    margin: 0 5px;
 }
 
 .brief__work h2 {
@@ -115,57 +175,54 @@ img {
     border-bottom: 1px dotted #03664d;
 }
 
-footer {
+footer{
     width: 100%;
-    background: #03664d;
-}
-
-.footer__nav ul {
-    margin: 0 auto;
-    padding: 0;
+    background-color: #01503c;
+    color: white;
     text-align: center;
-}
-
-.footer__nav li {
-    list-style-type: none;
-    display: inline-block;
-    text-align: center;
-}
-
-.footer__nav a {
-    padding: 15px 5px;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Inconsolata', monospace;
-    color: #18a582;
-    font-size: 14px;
-    font-weight: 400;
-    text-decoration: none;
-    display: block;
-    transition: .5s ease;
-}
-
-.footer__nav a:hover {
-    color: #f5fffc;
-}
-
-@media only screen and (min-width: 425px) {
-    .nav a {
-        font-size: 26px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .nav li {
-        margin: 0px 20px;
-    }
+    padding: 5px 0;
+    z-index: 100;
 }
 
 @media only screen and (min-width: 1024px) {
-    .nav a:hover {
+     .header__btnMenu {
+        display: none;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #03664d;
+    }
+    .header__nav {
+        margin: 0 auto;
+        width: 30%;
+    }
+    .header__nav ul {
+        display: flex;
+        background-color: #03664d;
+        justify-content: center;
+    }
+    .header__nav a {
+        font-size: 24px;
+        letter-spacing: .1em;
+        padding: 15px 40px;
+    }
+    .header__nav a:active {
+        position: relative;
+        top: 1px;
+    }
+    .header_scroll{
+       margin-top: 60px;
+    }
+    .header_scroll li{
+        margin: 10px;
+        font-size: 30px;
+    }
+    .header_scroll a:hover {
         color: darkslategray;
     }
-    .nav a:active {
+    .header_scroll a:active {
         position: relative;
         top: 1px;
     }
@@ -173,13 +230,13 @@ footer {
         margin: 20px auto;
         width: 80%;
         display: flex;
+        flex-direction: row;
     }
     .hero__imagem {
-        display: block;
-        margin: 0 auto;
+        display: flex;
+        flex-direction: column;;
         padding: 30px;
-        width: 30%;
-        height: auto;
+        width: 25%; 
         position: fixed;
     }
     .hero__imagem img {
@@ -187,14 +244,11 @@ footer {
         padding: 5px;
         border: 1px solid #e7b101;
     }
+    .hero__imagem p{
+        text-align: center;
+    }
     .brief {
         margin: 10px auto;
         margin-left: 500px;
-    }
-    .footer__nav li {
-        padding: 5px 20px;
-    }
-    .footer__nav a {
-        font-size: 22px;
     }
 }
