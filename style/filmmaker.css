@@ -55,6 +55,15 @@ img {
     width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+    .handle-position{
+        transform: translateY(-34px);
+        align-items: flex-start;
+    }
+}
+
+
+
 .fas {
     font-size: 20px;
     margin: 0 10px;
