@@ -42,6 +42,9 @@ body {
     -moz-animation: fadeIn 1s ease-in-out;
     -o-animation: fadeIn 1s ease-in-out;
     animation: fadeIn 1s ease-in-out;
+    overflow-x: hidden;
+    position: relative;
+    height: 100vh;
 }
 
 img {
@@ -57,6 +60,7 @@ a {
     width: 100%;
     clear: none;
     z-index: 100;
+    position: relative;
 }
 
 .header__nav ul {
@@ -105,51 +109,80 @@ a {
 }
 
 .trabalhos {
-    margin: 65px auto 0;
-    display: grid;
-    width: 100%;
-    text-align: center;
-    grid-template-rows: repeat(3, 1fr);
-    align-self: flex-end;
-    overflow: hidden;
+    width: 100vw;
+    height: 56.25vw;    
+    position:relative;
 }
 
-.trabalhos__thumb {
-    width: 100%;
-    display: grid;
-    text-align: center;
-    align-self: flex-end;
-    grid-template-rows: 1fr .15fr;
-    grid-gap: 0px;
-    gap: 0px;
-    margin-bottom: 5px;
+.trabalhos_box{
+    width: 100vw;
+    padding:56.25% 0 0 0;
+    background-color: black;
+    scale: 1.4;
 }
 
+.trabalhos_box_button {
+    font-size: 16px;
+    top: 40%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    right: 0;
+    margin: 0 auto;
+    color: white;    
+    background-color: #03664d;
+    width: 150px;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.trabalhos_box_button:hover{
+    color: #03664d;    
+    background-color: white;
+}
+
+.trabalhos_box iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%; 
+    opacity: .3;
+}
+
+.trabalhos_box_line{
+    background-color: white;
+    height: 70px;
+    width: 100vw;
+    position: relative;
+    transform: translateY(5px);
+}
 .trabalhos img {
     width: 100%;
 }
-
 .trabalhos p {
     color: #18a582;
     padding: 5px 0;
     margin: 0;
     background-color: #03664d;
 }
-
 .trabalho__thumb__vertical {
     display: none;
 }
-
 .hero {
-    margin: 10px auto 20px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 100px;
     width: 90%;
+    position: absolute;
 }
-
 .hero__texto h1 {
     text-align: center;
     margin: 0;
 }
-
 .hero__texto__henrique {
     font-weight: 500;
     font-family: 'Asap', sans-serif;
@@ -157,7 +190,6 @@ a {
     text-transform: uppercase;
     font-size: 37px;
 }
-
 .hero__texto__lapa {
     text-transform: uppercase;
     color: #03664d;
@@ -166,29 +198,24 @@ a {
     margin: 10px auto;
     font-weight: 700;
 }
-
 .hero__texto p {
     margin: 10px auto;
     text-align: center;
 }
-
 .hero__imagem {
     margin: 0 auto;
     padding-top: 10px;
     width: 270px;
     height: auto;
 }
-
 .hero__imagem img {
     border-radius: 50%;
     padding: 5px;
     border: 1px solid #e7b101;
 }
-
 .hero__texto__button {
     display: none;
 }
-
 .js .header__nav {
     position: absolute;
     width: 100%;
@@ -203,51 +230,30 @@ footer {
     padding: 10px 0;
     bottom: 0;
     margin-bottom: 0;
-}
-
-@media only screen and (min-width: 375px) {
-    .hero {
-        margin: 50px auto 20px;
-        width: 80%;
-    }
-    .hero__texto__henrique {
-        font-size: 40px;
-    }
-    .hero__texto__lapa {
-        font-size: 40px;
-    }
-}
-
-@media only screen and (min-width: 425px) {
-    .hero {
-        margin: 50px auto 20px;
-        width: 70%;
-    }
-    .hero__texto__henrique {
-        font-size: 42px;
-    }
-    .hero__texto__lapa {
-        font-size: 42px;
-    }
+    position: absolute;
 }
 
 @media only screen and (min-width: 768px) {
-    .trabalhos {
-        margin: 50px auto 0px;
-        width: 70%;
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 0px;
-    }
-    .trabalhos__thumb {
-        grid-template-rows: auto;
-    }
     .trabalho__thumb__horizontal {
         display: none;
     }
     .trabalho__thumb__vertical {
         display: block;
+    }
+    .trabalhos_box{
+        scale: 1;
+    }
+    .trabalhos_box_line{
+        height: 100px;
+        width: 100vw;
+        position: relative;
+        transform: translateY(-100px);
+    }
+    .trabalhos_box_button {
+        font-size: 26px;
+        top: 45%;
+        width: 250px;
+        padding: 15px;
     }
     .trabalhos img {
         width: 100%;
@@ -261,13 +267,25 @@ footer {
     .hero {
         margin: 50px auto 52px;
         width: 70%;
+        position: relative;
+        display: flex;
+        gap: 20px;
+        bottom: 0;
+        align-items: center;
     }
-    .hero__texto__henrique {
-        font-size: 45px;
+    .hero__texto {
+        width: 40%;
     }
     .hero__texto__lapa {
         font-size: 45px;
     }
+    .hero__imagem {
+        width: 50%;
+    }
+    .hero__texto__henrique {
+        font-size: 45px;
+    }
+ 
 }
 
 @media only screen and (min-width: 1024px) {
@@ -299,7 +317,7 @@ footer {
         top: 1px;
     }
     .trabalhos {
-        margin: 70px auto 0px;
+        margin: -50px auto 0px;
     }
     .trabalhos__thumb {
         transition: all;
@@ -307,22 +325,6 @@ footer {
     .trabalhos__thumb:hover {
         opacity: .7;
         cursor: pointer;
-    }
-    .hero {
-        margin: 20px auto;
-        width: 70%;
-        display: grid;
-        grid-gap: 70px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1;
-        justify-self: center;
-        justify-content: center;
-        align-content: center;
-    }
-    .hero__texto {
-        grid-column: 1 /2;
-        align-self: center;
-        justify-content: center;
     }
     .hero__texto h1 {
         text-align: center;
@@ -369,5 +371,9 @@ footer {
     .hero__texto__button:active {
         position: relative;
         top: 1px;
+    }
+    
+    footer {
+        position: relative;
     }
 }
